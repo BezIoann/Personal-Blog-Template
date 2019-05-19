@@ -1,0 +1,1 @@
+jQuery(".like").click(function(){jQuery(this).toggleClass("active");let e=jQuery(".like-count");alert(e,"KJDF")});

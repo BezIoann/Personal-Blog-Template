@@ -1,0 +1,209 @@
+//@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {}
+
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .side-bar {
+        display: none;
+    }
+
+    .page-main {
+        .container {
+            grid-template-columns: 6fr;
+        }
+    }
+
+    .body-text {
+        height: 0px;
+
+        h2 {
+            font: bold 26px/36px Hind, sans-serif;
+            margin-left: 60px;
+        }
+
+        span {
+            margin-left: 60px;
+            font: 300 18px/24px Hind, sans-serif;
+        }
+    }
+
+    .post-title {
+        font: bold 22px Montserrat, sans-serif;
+    }
+}
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .social-list {
+        a {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .body-text {
+
+        h2 {
+            font: bold 20px/36px Hind, sans-serif;
+            margin-left: 30px;
+        }
+
+        span {
+            margin-left: 30px;
+            font: 300 14px/24px Hind, sans-serif;
+        }
+    }
+
+    .sign-up {
+        grid-template-columns: 1fr 1fr 1fr;
+
+        h2 {
+            grid-column: 2/3;
+            margin-bottom: 20px;
+        }
+
+        input:nth-child(2) {
+            grid-column: 1/4;
+            margin-bottom: 10px;
+        }
+
+        input:nth-child(3) {
+            grid-column: 1/4;
+        }
+
+        button {
+            margin-top: 20px;
+            grid-column: 2/3;
+        }
+    }
+
+    .social-wraper {
+        padding: 20px 30px;
+
+        li {
+            margin-left: 20px;
+        }
+    }
+
+    .page-footer {
+        .container {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+}
+
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .nav-logo {
+        display: none;
+    }
+
+    .post-text {
+        padding: 0 20px;
+    }
+
+    .post-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .post-info,
+    .post-theme {
+        font: 400 14px Hind, sans-serif;
+    }
+
+    .post-title {
+        font: bold 16px Montserrat, sans-serif;
+    }
+
+
+    .post-author {
+        margin-bottom: 10px;
+    }
+
+    .post-info .post-date {
+        margin-left: 0px;
+        position: relative;
+    }
+
+    .quote {
+        padding: 95px 0px;
+    }
+
+    .quote-black .quote-title {
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    .quote-text {
+        font-size: 14px;
+    }
+
+    .social-wraper {
+        flex-direction: column;
+    }
+
+    .social-networks {
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+
+    .page-footer {
+        .container {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {}
+
+/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {}
+
+/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {}
+
+/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {}
+
+/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {}
+
+/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {}
+
+/**/

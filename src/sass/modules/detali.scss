@@ -1,0 +1,239 @@
+.post-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 140px;
+    grid-gap: 30px;
+    margin-bottom: 60px;
+
+    a {
+        display: flex;
+        letter-spacing: 2px;
+        justify-content: center;
+        text-transform: uppercase;
+        color: #FFF;
+        font: 600 14px "Hind", arial, sans-serif;
+        text-decoration: none;
+
+        span {
+            display: flex;
+            align-self: center;
+        }
+    }
+
+
+}
+
+.post-previous {
+    background-color: #000;
+
+    span {
+        position: relative;
+
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: -38px;
+            top: 3px;
+            width: 25px;
+            height: 15px;
+            background-image: url(../../img/left-arrow.png);
+            background-repeat: no-repeat;
+        }
+    }
+
+}
+
+.post-next {
+    background-color: #3a3c49;
+
+    span {
+        position: relative;
+
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            right: -38px;
+            top: -2px;
+            width: 25px;
+            height: 15px;
+            transform: rotate(180deg);
+            background-image: url(../../img/left-arrow.png);
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+.author-item {
+    background-color: #fff;
+
+    display: grid;
+    grid-template-columns: 1fr 5.7fr;
+    grid-gap: 20px;
+
+    figure {
+        background-color: #212121;
+    }
+
+    margin-bottom: 30px;
+}
+
+.author-about {
+    padding: 20px;
+
+    h3 {
+        font: 700 16px/24px "Montserrat", sans-serif;
+        text-transform: uppercase;
+        color: #212121;
+        letter-spacing: 1px;
+    }
+
+    p {
+        font: 300 16px/28px "Hind", sans-serif;
+        letter-spacing: 1px;
+    }
+
+}
+
+.author-title {
+    display: flex;
+    border-bottom: 1px solid #eaeaeb;
+
+    a {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-left: auto;
+        text-decoration: none;
+        color: #212121;
+        font: 400 15px/28px "Hind", sans-serif;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+    }
+}
+
+.socials-subscribers {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-bottom: 60px;
+
+    .social-svg {
+        transition: all .6s ease .2s;
+        fill: #0c0d0f;
+    }
+}
+
+.social-link {
+    display: flex;
+    text-decoration: none;
+
+    &:hover {
+
+        div {
+            background-color: #212121;
+        }
+
+        .social-svg {
+            fill: #Fff;
+        }
+    }
+
+
+    div {
+        transition: background-color .6s ease .2s;
+        background-color: #fff;
+        height: 50px;
+        width: 65px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    span {
+        align-items: center;
+        background-color: #fff;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        text-transform: uppercase;
+        color: #999999;
+        font: 400 16px/28px "Hind", sans-serif;
+
+    }
+}
+
+//Recomended Section
+.recomended-posts {
+    background-color: #fff;
+    padding: 0 20px;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+
+    h1 {
+        padding: 30px 0;
+        font: bold 20px "Montserrat", sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        color: #212121;
+        margin: 0;
+        text-align: left;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            right: 60px;
+            bottom: 22px;
+            display: block;
+            width: 40px;
+            cursor: pointer;
+            height: 40px;
+            background-color: #464646;
+            background-image: url(../../img/left-arrow.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &::after {
+            content: '';
+            cursor: pointer;
+            position: absolute;
+            bottom: 22px;
+            right: 0;
+            display: block;
+            width: 40px;
+            height: 40px;
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+            background-color: #464646;
+            background-image: url(../../img/left-arrow.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
+
+.recomended-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.recomended-item {
+    figure {
+        background-color: #464646;
+        height: 220px;
+    }
+
+    p {
+        text-align: center;
+        text-transform: uppercase;
+        font: bold 16px "Montserrat", sans-serif;
+    }
+}

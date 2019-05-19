@@ -1,0 +1,23 @@
+@import "normalize";
+@import "_font.scss";
+@import "_base.scss";
+@import "modules/header.scss";
+@import "modules/page-main.scss";
+@import "modules/side-bar.scss";
+@import "modules/detali.scss";
+@import "_media.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1530px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.responsive {
+    width: 100%;
+    height: 100%;
+}
